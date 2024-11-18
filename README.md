@@ -11,7 +11,7 @@ O objetivo deste projeto é consolidar e organizar o conhecimento acumulado ao l
 # Arquitetura
 Para o backend, decidi usar umavariação da arquitetura em camadas combinada com o conceito de DDD (Domain-Driven Design) para estruturar o projeto de forma clara, organizada e alinhada às regras de negócio. 
 
-A arquitetura em camadas ajuda a separar as responsabilidades da aplicação, dividindo-a em módulos como *Application*, *Domain*, e *Infra*. Essa abordagem não apenas promove uma separação de responsabilidades, mas também reforça o alinhamento entre a modelagem do domínio e a implementação técnica. Cada camada desempenha um papel específico:
+A arquitetura em camadas ajuda a separar as responsabilidades da aplicação, dividindo-a em módulos como *Application*, *Domain*, *Infraestrutura* e *Web*. Essa abordagem não apenas promove uma separação de responsabilidades, mas também reforça o alinhamento entre a modelagem do domínio e a implementação técnica. Cada camada desempenha um papel específico:
 
 ### Camada de Aplicação (Application Layer)
 Gerencia o fluxo de dados e orquestra as operações dentro do sistema. Ela coordena a execução das regras de negócio contidas no domínio e interage com outras camadas, mas não contém lógica de negócios por si só. É onde ficam os casos de uso específicos do sistema.
@@ -21,6 +21,9 @@ O coração do sistema, responsável pela lógica central do negócio. É aqui q
 
 ### Camada de Infraestrutura (Infrastructure Layer)
 Lida com as preocupações técnicas, como persistência de dados, comunicação com APIs externas, mensagens, logs e configuração de serviços. Ela fornece implementações concretas para interfaces definidas na camada de domínio, garantindo que o domínio permaneça isolado dos detalhes técnicos.
+
+### Camada Web (Web Layer)
+A Camada Web atua como um ponto de entrada para o sistema, processando solicitações externas e retornando respostas apropriadas. Esta camada é projetada para interagir com a Camada de Aplicação, delegando a ela a orquestração das operações.
 
 Já o DDD complementa essa abordagem, focando no entendimento profundo do domínio do problema. Por meio da aplicação de conceitos como entidades, objetos de valor, agregados, repositórios e serviços de domínio, é possível modelar o sistema de forma a refletir as regras e processos reais do negócio. O uso do DDD também promove a criação de uma linguagem ubíqua, permitindo que todos os membros do time compartilhem um entendimento comum sobre o sistema.
 
