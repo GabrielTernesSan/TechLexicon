@@ -25,6 +25,12 @@ Lida com as preocupações técnicas, como persistência de dados, comunicação
 ### Camada Web (Web Layer)
 A Camada Web atua como um ponto de entrada para o sistema, processando solicitações externas e retornando respostas apropriadas. Esta camada é projetada para interagir com a Camada de Aplicação, delegando a ela a orquestração das operações.
 
+<p align="center">
+  <a href="https://imgur.com/a/qDtAjrD">
+    <img src="https://i.imgur.com/qDtAjrD.jpg" alt="Descrição da imagem" />
+  </a>
+</p>
+
 Já o DDD complementa essa abordagem, focando no entendimento profundo do domínio do problema. Por meio da aplicação de conceitos como entidades, objetos de valor, agregados, repositórios e serviços de domínio, é possível modelar o sistema de forma a refletir as regras e processos reais do negócio. O uso do DDD também promove a criação de uma linguagem ubíqua, permitindo que todos os membros do time compartilhem um entendimento comum sobre o sistema.
 
 Essa combinação de arquitetura em camadas e DDD proporciona uma base sólida para o desenvolvimento do backend, com vantagens como alta manutenibilidade, fácil escalabilidade e um alinhamento forte entre a solução técnica e as necessidades do negócio.
